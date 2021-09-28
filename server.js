@@ -1,5 +1,5 @@
 const express = require('express')
-const {TooManyRequests} = require('http-errors')
+const { TooManyRequests } = require('http-errors')
 const path = require('path')
 const app = express()
 
