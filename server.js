@@ -10,6 +10,9 @@ const rollbar = new Rollbar({
     captureUnhandledRejections: true
 })
 
+app.use(express.json())
+
+
 app.get('/', (req,res) => {
     res.sendFile(path.join(__dirname, './client/index.html'))
     rollbar.info("Html was monitored successfully")
